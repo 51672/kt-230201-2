@@ -1,0 +1,12 @@
+# Q2 Answer template
+
+N = int(input())
+initial = N
+
+count = 0
+while True:
+    a, b = N//10, N%10
+    N = b*10 + (a+b)%10
+    count += 1
+    if initial == N: break
+print(count)
